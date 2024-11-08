@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import { LandingPage, Appointment, About, Contact, Profile, MyAppointments, Login, Doctors } from "./pages/paths"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -17,8 +18,9 @@ function App() {
             <Route path="/my-appointments" element={<MyAppointments />} />
             <Route path="/login" element={<Login />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/Appointment/:docId" element={<Appointment />} />
+            <Route path="/appointment/:docId" element={<Appointment />} />
           </Routes>
+          <Footer/>
         </div>
       </div>
     </>
